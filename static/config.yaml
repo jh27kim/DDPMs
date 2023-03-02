@@ -2,8 +2,9 @@ defaults:
   - _self_
   - network: DDPM
   - logs: default
+  - data: data
 
-cuda: 0
+cuda: 1
 test: false
 output: ./output
 

@@ -1,0 +1,3 @@
+datapath: ./dataset/data
+imgsize: 128
+batchsize: 64

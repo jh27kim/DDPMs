@@ -1,3 +1,5 @@
-start running
+Start running
 
-[INFO|DDPM-logger|main.py:15] 2023-02-24 22:18:08,003 > Running model : DDPM
+[INFO|DDPM-logger|main.py:20] 2023-03-02 17:44:58,086 > Running model : DDPM
+
+[INFO|DDPM-logger|Master.py:32] 2023-03-02 17:44:58,281 > CUDA device detected. Using device 1.
