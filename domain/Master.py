@@ -4,15 +4,17 @@ import torch
 
 
 class Master():
-    def __init__(self, cfg, logger):
+    def __init__(self, cfg, logger, cur_dir):
         self.cfg= cfg
         self.logger = logger
+        self.cur_dir = cur_dir
 
         self.data_folder = cfg.data.datapath
         self.image_size = cfg.data.imgsize
         self.batch_size = cfg.data.batchsize
 
         self._init_cuda()
+        self._load_dataset()
 
 
     def _init_cuda(self):
@@ -36,5 +38,6 @@ class Master():
 
 
     def _load_dataset(self):
-        self.dataset = Dataset(self.data_folder, self.image_size, augment_horizontal_flip=True)
-        self.dl = DataLoader(self.dataset, batch_size = self.batch_size, shuffle = True, pin_memory = True)
+        self.dataset = Dataset(self.cur_dir, self.data_folder, self.image_size, augment_horizontal_flip=True)
+        assert self.dataset[0].shape[1] == self.dataset[0].shape[2]
+        self.dataloader = DataLoader(self.dataset, batch_size = self.batch_size, shuffle = True, pin_memory = True)

@@ -5,8 +5,8 @@ defaults:
   - data: data
 
 cuda: 1
-test: false
-output: ./output
+test: true
+output_dir: output
 
 hydra:  
   output_subdir: null  

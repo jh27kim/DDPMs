@@ -1,1 +1,9 @@
 model: DDPM
+train:
+  lr: 1e-4
+  steps: 100000
+  timestep: 1000
+  beta1: 1e-4
+  beta2: 0.02
+  loss: mse
+  optimizer: adam

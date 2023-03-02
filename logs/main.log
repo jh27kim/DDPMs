@@ -1,5 +1,9 @@
 Start running
 
-[INFO|DDPM-logger|main.py:20] 2023-03-02 17:44:58,086 > Running model : DDPM
+[INFO|DDPM-logger|main.py:21] 2023-03-02 22:40:44,762 > Training model : DDPM
 
-[INFO|DDPM-logger|Master.py:32] 2023-03-02 17:44:58,281 > CUDA device detected. Using device 1.
+[INFO|DDPM-logger|Master.py:34] 2023-03-02 22:40:45,536 > CUDA device detected. Using device 1.
+
+[WARNING|DDPM-logger|DDPM.py:146] 2023-03-02 22:40:49,369 > Checkpoint not found, proceeding at epoch 0
+
+[INFO|DDPM-logger|DDPM.py:116] 2023-03-02 22:40:49,369 > Starting sampling using epoch at 0

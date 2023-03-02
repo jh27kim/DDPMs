@@ -1,1 +1,5 @@
 level: info
+ckpt_dir: logs/ckpt
+ckpt_file: ddpm_ckpt_000000.pth
+ckpt_epoch: 1
+visualize_epoch: 1
